@@ -1,0 +1,8 @@
+# user acceptance test env resources
+spring:
+  cloud:
+    config:
+      name: application-eureka-server
+      uri: http://localhost:8888/
+  profiles:
+    active: uat

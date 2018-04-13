@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @Description: 名称服务.
  * @Date : 2018/4/8-10:33
  */
-@FeignClient("eureka-client-provider")
+@FeignClient("application-eureka-client-provider")
 @Service
 public interface NameService {
     @RequestMapping("/getName")

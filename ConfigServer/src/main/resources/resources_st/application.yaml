@@ -1,3 +1,16 @@
 # system test env resources
 server:
-  port: 8880
+  port: 28888
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Jungle93/spring-cloud-config-repo.git
+          basedir: /system-test
+  application:
+    name: application-config-server
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:28761/eureka/
